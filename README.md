@@ -28,6 +28,11 @@ This simulates a real-world log aggregation setup, where logs from multiple serv
             │ Sends logs → EC2-1:9997     │
             └─────────────────────────────┘
 
+
+You can access the full video demonstration of this project and follow along with the setup.
+[![Project Demo Video](Thumbnail_URL)](https://youtu.be/g6iyxSa9dHM)
+
+
 ## ⚙️ AWS Setup
 
 ### 1. Launch EC2 Instances
