@@ -93,6 +93,7 @@ sudo /opt/splunk/bin/splunk start --accept-license --answer-yes
 
 ### 5. Access Splunk Home
 > URL: http://EC2-1-Public-IP:8000
+- Replace EC2-1-Public-IP with the public Ip Address of the EC2 Instance that is running splunk(EC2-1).
 
 > Default login: Use the credentials set just now.
 
@@ -163,12 +164,22 @@ server=mysplunk_indexer1:9997
 - replace "mysplunk_indexer1" with the public IP of EC2-Instance 1 that is running splunk enterprise.
 
 > Restart Splunk forwarder to start forwarding logs to Splunk for analyzing and monitoring.
+ - Navigate to /opt/splunkforwarder/bin
+```bash
+cd /opt/splunkforwarder/bin
+```
+
+```bash
+./splunk restart
+```
+> This restarts splunk forwarder on the second EC2 Instance and starts forwarding logs to the first EC2 Instance that is running splunk
 
 
 ## ✅ Validation
 
 ### 1. Log in to Splunk Enterprise
  - Web UI (http://EC2-1-Public-IP:8000).
+ - Replace EC2-1-Public-IP with the public Ip Address of the EC2 Instance that is running splunk(EC2-1).
 
 ### 2. Go to Search & Reporting App.
 
@@ -176,6 +187,7 @@ server=mysplunk_indexer1:9997
 ```bash
 index= "<index_name>" (the one we configured in inputs.conf file in forwarder)
 ```
+ - Replace <index_name> with the index we created earlier.
 
 ### 4. Observe Logs being forwarded from the instance running splunk forwarder.
 
