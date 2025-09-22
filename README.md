@@ -30,7 +30,9 @@ This simulates a real-world log aggregation setup, where logs from multiple serv
 
 
 You can access the full video demonstration of this project and follow along with the setup.
-[![Project Demo Video](Thumbnail_URL)](https://youtu.be/g6iyxSa9dHM)
+Click here to open the video on youtube.
+
+[![Project Demo Video](https://i.ytimg.com/vi/g6iyxSa9dHM/hqdefault.jpg)](https://youtu.be/g6iyxSa9dHM)
 
 
 ## ⚙️ AWS Setup
