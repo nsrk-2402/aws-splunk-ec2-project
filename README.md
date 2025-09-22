@@ -141,6 +141,11 @@ cd /opt/splunkforwarder/etc/apps/search/
 ```
 
 > Create a folder called local in search directory and switch to it
+
+```bash
+mkdir local
+```
+
 ```bash
 cd local
 ```
